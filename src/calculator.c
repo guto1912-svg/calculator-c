@@ -36,18 +36,18 @@ int main(){
     printf("1 -- Addition \n2 -- Subtraction \n3 -- Multiplication \n4 -- Division \n5 -- Factorial \n0 -- Exit \n");
     printf("Select the operation: ");
     scanf("%d", &num);
-    if (num<0 || num>5){
-        printf("Invalid option!");
+    if (num < 0 || num > 5){
+        printf("Opcao invalida!\n");
         return 0;
     }
-    else if (num==1 || num==2 || num==3 || num==4){ 
-        printf("Write two numbers: ");
-        scanf("%f %f",&x, &y);
+    else if (num >= 1 && num <= 4){ 
+        printf("Digite dois numeros: ");
+        scanf("%f %f", &x, &y);
     }
-    else {
-        printf("Write one number: ");
+    else if (num == 5) {
+        printf("Digite um numero: ");
         scanf("%d", &t);
-    }
+}
     switch (num){
         case 0:
             printf("See you next time!");
@@ -73,4 +73,4 @@ int main(){
     }
     printf("Result: %.2f\n", result);
     return 0;
-}
+} // Test Git
