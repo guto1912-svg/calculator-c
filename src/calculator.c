@@ -37,15 +37,15 @@ int main(){
     printf("Select the operation: ");
     scanf("%d", &num);
     if (num < 0 || num > 5){
-        printf("Opcao invalida!\n");
+        printf("Invalid option!\n");
         return 0;
     }
     else if (num >= 1 && num <= 4){ 
-        printf("Digite dois numeros: ");
+        printf("Write two numbers: ");
         scanf("%f %f", &x, &y);
     }
     else if (num == 5) {
-        printf("Digite um numero: ");
+        printf("Write one number: ");
         scanf("%d", &t);
 }
     switch (num){
