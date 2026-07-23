@@ -73,4 +73,4 @@ int main(){
     }
     printf("Result: %.2f\n", result);
     return 0;
-} // Test Git
+} 
